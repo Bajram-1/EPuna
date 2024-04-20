@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPuna", "EPuna\EPuna.csproj", "{45A6C4AB-851C-4134-A69D-49F642C7EA5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EPuna", "EPuna\EPuna.csproj", "{45A6C4AB-851C-4134-A69D-49F642C7EA5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPuna.DAL", "EPuna.DAL\EPuna.DAL.csproj", "{D27D49C5-3B6A-49A9-B534-57F61427A65C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EPuna.DAL", "EPuna.DAL\EPuna.DAL.csproj", "{D27D49C5-3B6A-49A9-B534-57F61427A65C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPuna.BLL", "EPuna.BLL\EPuna.BLL.csproj", "{45E48081-BEA0-4C81-80E6-BEE03A641268}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EPuna.BLL", "EPuna.BLL\EPuna.BLL.csproj", "{45E48081-BEA0-4C81-80E6-BEE03A641268}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

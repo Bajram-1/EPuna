@@ -1,0 +1,22 @@
+﻿@model EPuna.BLL.DTO.JobDTO
+
+<h2>Edit Job</h2>
+
+<form asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+    <input asp-for="JobId" type="hidden" />
+
+    <div>
+        <label>Title</label>
+        <input asp-for="Title" />
+        <span asp-validation-for="Title"></span>
+    </div>
+    <div>
+        <label>Description</label>
+        <textarea asp-for="Description"></textarea>
+        <span asp-validation-for="Description"></span>
+    </div>
+    <div>
+        <input type="submit" value="Update" />
+    </div>
+</form>

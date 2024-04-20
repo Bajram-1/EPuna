@@ -1,0 +1,10 @@
+﻿@model EPuna.BLL.DTO.JobDTO
+
+<h2>Delete Job</h2>
+
+<form asp-action="DeleteConfirmed" method="post">
+    @Html.AntiForgeryToken()
+    <input asp-for="JobId" type="hidden" />
+    <p>Are you sure you want to delete this job?</p>
+    <input type="submit" value="Delete" />
+</form>

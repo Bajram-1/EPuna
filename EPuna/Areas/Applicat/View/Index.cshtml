@@ -1,0 +1,30 @@
+﻿@model EPuna.BLL.DTO.JobDTO
+
+<h2>Jobs List</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var job in Model)
+        {
+            <tr>
+                <td>@job.Title</td>
+                <td>@job.Description</td>
+                <td>@(job.IsAvailable ? "Available" : "Not Available")</td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = job.JobId })">Edit</a> |
+                    <a href="@Url.Action("Details", new { id = job.JobId })">Details</a> |
+                    <a href="@Url.Action("Delete", new { id = job.JobId })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Create")">Create New Job</a>

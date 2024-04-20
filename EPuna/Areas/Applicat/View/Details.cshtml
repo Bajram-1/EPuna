@@ -1,0 +1,18 @@
+﻿@model EPuna.BLL.ViewModels.JobViewModel
+
+<h2>Job Details</h2>
+
+<div>
+    <label>Title</label>
+    <div>@Model.Title</div>
+</div>
+<div>
+    <label>Description</label>
+    <div>@Model.Description</div>
+</div>
+<div>
+    <label>Status</label>
+    <div>@(Model.IsAvailable ? "Available" : "Not Available")</div>
+</div>
+
+<a href="@Url.Action("Index")">Back to List</a>
